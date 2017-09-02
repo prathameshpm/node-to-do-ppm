@@ -14,19 +14,19 @@ var ToDo = mongoose.model('ToDo', {
     completedAt: {
         type: Number,
         default: null
-    },
-    user: {
-        type: String,
-        require: true,
-        minlength: 1,
-        trim: true
-    },
-    email: {
-        type: String,
-        require: true,
-        minlength: 1,
-        trim: true
-    }
+    }// ,
+    // user: {
+    //     type: String,
+    //     require: true,
+    //     minlength: 1,
+    //     trim: true
+    // },
+    // email: {
+    //     type: String,
+    //     require: true,
+    //     minlength: 1,
+    //     trim: true
+    // }
 });
 
 // var newToDo = new ToDo({
@@ -51,4 +51,4 @@ var ToDo = mongoose.model('ToDo', {
 //     console.log('Unable to save ToDo', e);
 // });
 
-module.exports = {ToDo};
+module.exports = ToDo;
