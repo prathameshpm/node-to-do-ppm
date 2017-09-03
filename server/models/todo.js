@@ -14,7 +14,7 @@ var ToDo = mongoose.model('ToDo', {
     completedAt: {
         type: Number,
         default: null
-    }// ,
+    } // ,
     // user: {
     //     type: String,
     //     require: true,
@@ -34,14 +34,14 @@ var ToDo = mongoose.model('ToDo', {
 // });
 
 // var newToDo = new ToDo({
-    // text: 'Have Dinner',
-    // completed: true,
-    // completedAt: 2135
-    // text: '  Have coffee   '
-    // text: true
-    // user: 'Prathamesh',
-    // email: 'abcd@xyz.com',
-    // text: 'to do object text'
+// text: 'Have Dinner',
+// completed: true,
+// completedAt: 2135
+// text: '  Have coffee   '
+// text: true
+// user: 'Prathamesh',
+// email: 'abcd@xyz.com',
+// text: 'to do object text'
 // });
 
 // newToDo.save().then((doc) => {
