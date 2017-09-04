@@ -1,9 +1,9 @@
 const {
-    ObjectID
+  ObjectID
 } = require('mongodb');
 
 const {
-    mongoose
+  mongoose
 } = require('./../server/db/mongoose');
 const Todo = require('./../server/models/todo');
 const user = require('./../server/models/user');
@@ -16,5 +16,5 @@ const user = require('./../server/models/user');
 // Todo.findByIdAndRemove
 
 Todo.findByIdAndRemove('59ac5005734d1d25a0f5fd70').then((todo) => {
-    console.log(todo);
+  console.log(todo);
 });
