@@ -19,42 +19,8 @@ var ToDo = mongoose.model('ToDo', {
     type: mongoose.Schema.Types.ObjectId,
     required: true
   }
-
-   // ,
-  // user: {
-  //     type: String,
-  //     require: true,
-  //     minlength: 1,
-  //     trim: true
-  // },
-  // email: {
-  //     type: String,
-  //     require: true,
-  //     minlength: 1,
-  //     trim: true
-  // }
+// (6)
 });
 
-// var newToDo = new ToDo({
-//     text: 'Cook Dinner'
-// });
-
-// var newToDo = new ToDo({
-// text: 'Have Dinner',
-// completed: true,
-// completedAt: 2135
-// text: '  Have coffee   '
-// text: true
-// user: 'Prathamesh',
-// email: 'abcd@xyz.com',
-// text: 'to do object text'
-// });
-
-// newToDo.save().then((doc) => {
-//     // console.log('Saved ToDo', doc);
-//     console.log(JSON.stringify(doc, undefined, 2));
-// }, (e) => {
-//     console.log('Unable to save ToDo', e);
-// });
-
+// (7)
 module.exports = ToDo;

@@ -20,7 +20,6 @@ const port = process.env.PORT;
 app.use(bodyParser.json());
 
 app.post('/todos', authenticate, (req, res) => {
-  // console.log(req.body);
   var todo = new ToDo({
     text: req.body.text,
     _creator: req.user._id
@@ -128,7 +127,7 @@ app.post('/users', (req, res) => {
 
   user.save().then(() => {
     return user.generateAuthToken();
-    // res.send(user);
+    // (3)
   }).then((token) => {
     res.header('x-auth', token).send(user);
   }).catch((e) => {
@@ -137,17 +136,7 @@ app.post('/users', (req, res) => {
 });
 
 app.get('/users/me', authenticate, (req, res) => {
-  // var token = req.header('x-auth');
-  //
-  // User.findByToken(token).then((user) => {
-  //   if(!user) {
-  //     return Promise.reject();
-  //   }
-  //
-  //   res.send(user);
-  // }).catch((e) => {
-  //   res.status(401).send();
-  // });
+  // (1)
 
   res.send(req.user);
 });
@@ -155,7 +144,7 @@ app.get('/users/me', authenticate, (req, res) => {
 app.post('/users/login', (req, res) => {
   var body = _.pick(req.body, ['email', 'password']);
 
-  // res.send(body);
+  // (2)
   User.findByCredentials(body.email, body.password).then((user) => {
     return user.generateAuthToken().then((token) => {
       res.header('x-auth', token).send(user);

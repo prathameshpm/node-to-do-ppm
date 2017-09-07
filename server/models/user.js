@@ -77,9 +77,7 @@ UserSchema.statics.findByToken = function(token) {
   try {
     decoded = jwt.verify(token, process.env.JWT_SECRET);
   } catch (e) {
-    // return new Promise((resolve, reject) => {
-    //   reject();
-    // });
+    // (4)
     return Promise.reject();
   }
 
@@ -128,17 +126,5 @@ UserSchema.pre('save', function(next) {
 });
 
 var User = mongoose.model('User', UserSchema);
-
-
-// var user = new User ({
-//     email: 'mahamulkarprathamesh@gmail.com     '
-// });
-//
-//
-// user.save().then((doc) => {
-//     console.log('User saved', doc);
-// }, (e) => {
-//     console.log('Unable to save user', e);
-// });
-
+// (5)
 module.exports = User;

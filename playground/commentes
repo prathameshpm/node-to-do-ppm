@@ -1,0 +1,91 @@
+(1)
+
+// var token = req.header('x-auth');
+//
+// User.findByToken(token).then((user) => {
+//   if(!user) {
+//     return Promise.reject();
+//   }
+//
+//   res.send(user);
+// }).catch((e) => {
+//   res.status(401).send();
+// });
+
+(2)
+
+res.send(body);
+
+(3)
+
+res.send(user);
+
+(4)
+
+// return new Promise((resolve, reject) => {
+//   reject();
+// });
+
+(5)
+
+// var user = new User ({
+//     email: 'mahamulkarprathamesh@gmail.com     '
+// });
+//
+//
+// user.save().then((doc) => {
+//     console.log('User saved', doc);
+// }, (e) => {
+//     console.log('Unable to save user', e);
+// });
+
+(6)
+
+
+   // ,
+  // user: {
+  //     type: String,
+  //     require: true,
+  //     minlength: 1,
+  //     trim: true
+  // },
+  // email: {
+  //     type: String,
+  //     require: true,
+  //     minlength: 1,
+  //     trim: true
+  // }
+
+  (7)
+
+  // var newToDo = new ToDo({
+  //     text: 'Cook Dinner'
+  // });
+
+  // var newToDo = new ToDo({
+  // text: 'Have Dinner',
+  // completed: true,
+  // completedAt: 2135
+  // text: '  Have coffee   '
+  // text: true
+  // user: 'Prathamesh',
+  // email: 'abcd@xyz.com',
+  // text: 'to do object text'
+  // });
+
+  // newToDo.save().then((doc) => {
+  //     // console.log('Saved ToDo', doc);
+  //     console.log(JSON.stringify(doc, undefined, 2));
+  // }, (e) => {
+  //     console.log('Unable to save ToDo', e);
+  // });
+
+(8)
+
+// if (env === 'development') {
+//   process.env.PORT = 3000;
+//   database = 'mongodb://localhost:27017/ToDoApp';
+// } else if (env === 'test') {
+//   process.env.PORT = 3000;
+//   database = 'mongodb://localhost:27017/ToDoAppTest';
+// }
