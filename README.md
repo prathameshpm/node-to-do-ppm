@@ -1,6 +1,6 @@
 API's for todo app
 
-#POST : {{url}}/users/login ==> Login User and Return Auth Token
+#POST : /users/login ==> Login User and Return Auth Token
 
 #POST : /users ==> Create User
 
