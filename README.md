@@ -17,5 +17,3 @@ API's for todo app
 #PATCH : /todos/:id ==> Should Update the ToDo
 
 #DELETE : /todos/:id ==> Should Remove a ToDo
-
-Heroku Base URL -> https://thawing-depths-20269.herokuapp.com/
